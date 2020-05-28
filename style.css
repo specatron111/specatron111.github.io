@@ -610,20 +610,11 @@ textarea:focus {
 
 /*--------------- project page --------------- */
 
-.prev, .next p {
+.prev, .next  {
       color: grey;
       text-decoration: none;
 }
 
-.prev p {
-      color: grey;
-      text-align: left;
-}
-
-.next p {
-      color: grey;
-      text-align: right;
-}
 
 .prev, .next a {
       color: grey;
@@ -635,7 +626,7 @@ textarea:focus {
       text-decoration: none;
 }
 
-.next a {
+.next  {
       color: grey;
       text-align: right;
       text-decoration: none;
