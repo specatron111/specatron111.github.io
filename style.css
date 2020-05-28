@@ -608,6 +608,7 @@ textarea:focus {
 
 .prev, .next p {
       color: grey;
+      text-decoration: none;
 }
 
 .prev p {
@@ -616,4 +617,24 @@ textarea:focus {
 
 .next p {
       text-align: right;
+}
+
+.prev, .next a {
+      color: grey;
+}
+
+.prev a {
+      text-align: left;
+      text-decoration: none;
+}
+
+.next a {
+      text-align: right;
+      text-decoration: none;
+}
+
+a:hover 
+{
+     text-decoration:none; 
+     cursor:pointer;  
 }
