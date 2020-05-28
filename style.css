@@ -632,7 +632,14 @@ textarea:focus {
       text-decoration: none;
 }
 
-a:hover 
+.prev a:hover 
+{
+      color: grey;
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.next a:hover 
 {
       color: grey;
      text-decoration:none; 
