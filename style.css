@@ -47,7 +47,7 @@ html, body {
       }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 7000px) {
       @keyframes typewriter {
             from {
                   width: 0;
