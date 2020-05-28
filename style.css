@@ -305,7 +305,7 @@ h6 {
 }
 
 .project1::after {
-      content: "timeless flow.";
+      content: "ninja.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -341,7 +341,7 @@ h6 {
 }
 
 .project3::after {
-      content: "never again.";
+      content: "bruh.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
