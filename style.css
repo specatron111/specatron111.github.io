@@ -647,3 +647,8 @@ a:hover
      text-decoration:none; 
      cursor:pointer;  
 }
+
+a:not([href]) {
+      color: grey;
+      text-decoration: none;
+    }
