@@ -515,8 +515,20 @@ h6 {
       margin-top: 120px;
 }
 
-.image {
+.image1 {
       background: url('img/project1.jpg') no-repeat 50% 70%;
+}
+
+.image2 {
+      background: url('img/project2.png') no-repeat 50% 70%;
+}
+
+.image3 {
+      background: url('img/project3code.jpg') no-repeat 50% 70%;
+}
+
+.image4 {
+      background: url('img/project4code.jpg') no-repeat 50% 70%;
 }
 
 /*--------------- contact form --------------- */
