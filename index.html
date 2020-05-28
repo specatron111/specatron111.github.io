@@ -8,28 +8,19 @@
 
       <title>home | spec</title>
 
-      <!-- stylesheet -->
       <link rel="stylesheet" href="style.css">
-
-      <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-      <!-- google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-      <!-- terminal effect -->
       <script src="t.min.js"></script>
 
-      <!-- for on scroll animations -->
       <link rel="stylesheet" href="animate.css">
       <script src="wow.min.js"></script>
 
 </head>
 <body>
       <div class="wrapper">
-
-            <!--------------- navbar starts here --------------->
             <nav>
                   <span id="brand">
                         <a href="index.html">speccy</a>
@@ -58,11 +49,10 @@
                         <li><a href="contact.html">contact<span>.</span></a></li>
                   </ul>
             </div>
-            <!--------------- navbar ends here --------------->
 
 
 
-            <!--------------- hero section starts here --------------->
+            <!--------------- typewriter start --------------->
             <div class="hero">
                   <div class="header">
                         <h1 class="line anim-typewriter">i make cool stuff.</h1>
@@ -70,11 +60,11 @@
             </div>
 
             <div class="scroll-down"></div>
-            <!--------------- hero section ends here --------------->
+            <!--------------- typewriter end --------------->
 
 
 
-            <!--------------- projects section starts here --------------->
+            <!--------------- projects start --------------->
             <div class="container-fluid">
                   <br><br><br>
 
@@ -122,11 +112,11 @@
 
                   <div class="whitespace"></div>
             </div>
-            <!--------------- projects section ends here --------------->
+            <!--------------- projects end --------------->
 
 
 
-            <!--------------- footer starts here --------------->
+            <!--------------- footer --------------->
             <div class="footer">
                   <div class="container">
                         <br><br>
@@ -175,19 +165,17 @@
                         </div>
                   </div>
             </div>
-            <!--------------- footer ends here --------------->
+            <!--------------- footer --------------->
 
             <br><br><br><br>
 
       </div>
 
-      <!-- greensock cdn -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script type="text/javascript">
 
-      // navigation starts here
 
       $("#toggle").click(function() {
             $(this).toggleClass('on');
@@ -204,10 +192,6 @@
             $("#resize").toggleClass("active");
       });
 
-      // navigation ends here
-
-      // nav animation
-
       TweenMax.from("#brand", 1, {
             delay: 0.4,
             y: 10,
@@ -220,8 +204,6 @@
             opacity: 0,
             ease: Expo.easeInOut
       }, 0.1);
-
-      // nav animation ends
 
       new WOW().init();
 

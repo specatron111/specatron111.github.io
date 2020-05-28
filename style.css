@@ -43,7 +43,7 @@ html, body {
             width: 0;
       }
       to {
-            width: 9em;
+            width: 12em;
       }
 }
 
@@ -53,7 +53,7 @@ html, body {
                   width: 0;
             }
             to {
-                  width: 9em;
+                  width: 10em;
             }
       }
 }
@@ -616,10 +616,12 @@ textarea:focus {
 }
 
 .prev p {
+      color: grey;
       text-align: left;
 }
 
 .next p {
+      color: grey;
       text-align: right;
 }
 
@@ -628,17 +630,20 @@ textarea:focus {
 }
 
 .prev a {
+      color: grey;
       text-align: left;
       text-decoration: none;
 }
 
 .next a {
+      color: grey;
       text-align: right;
       text-decoration: none;
 }
 
 a:hover 
 {
+      color: grey;
      text-decoration:none; 
      cursor:pointer;  
 }
