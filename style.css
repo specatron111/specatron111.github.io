@@ -692,21 +692,21 @@ canvas {
 /*--------lightswitch-----------*/
 .lightswitch-app {
       perspective: 500px;
-      right: 150px;
+      position: absolute; bottom: 0;
 }
 
 .switch-control {
 	display: none;
 }
 
-body {
+.room {
 	display: block;
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
 	top: 0;
 	left: 0;
-      
+      color:#dfdfdf;
       background: #0f0f0f;
 }
 
@@ -730,6 +730,7 @@ body {
 		transform: translateX(-50%) translateY(-50%) rotateZ(180deg);
 }
 
-.switch-control:checked ~ body {
+.switch-control:checked ~ .room {
+      color:#0f0f0f;
 	background: linear-gradient(#3D007A, #FFADD6);
 }
