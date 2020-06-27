@@ -47,10 +47,10 @@
             <script>
                   function darkModeClicked(checkbox) {
                     darkMode = checkbox.checked;
-                    localStorage.setItem('darkMode', darkMode);
                     setDarkMode();
                   }
                   document.getElementById('toolbar-active').checked = darkMode;
+                  localStorage.setItem('darkMode', darkMode);
             </script>
       </div>
       <div class="wrapper">
