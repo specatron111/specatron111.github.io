@@ -692,20 +692,14 @@ canvas {
 /*--------lightswitch-----------*/
 .lightswitch-app {
       perspective: 500px;
-      position: absolute; bottom: 0;
-}
 
 .switch-control {
 	display: none;
 }
 
 .room {
-      display: block;
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      width: 100%;
-      height: 100%;
+	display: block;
+	position: absolute;
 	top: 0;
 	left: 0;
       color:#dfdfdf;
