@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
 /*--------------- basic styling --------------- */
 html, body {
       margin: 0;
@@ -10,24 +10,18 @@ html, body {
       color: #fff ;
 }
 
-* {
-	box-sizing: border-box;
-}
-
-body {
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-h1 {
+.title {
+      position: relative;
+  }
+h3 {
 	font-family: 'Nova Mono', monospace;
 	font-size: 2.5rem;
 	text-transform: uppercase;
 	width: 728px;
 	height: 410px;
-	color: black;
+      color: black;
+      position: absolute;
+      top: 120px;
 }
 
 .char {
@@ -50,6 +44,11 @@ h1 {
 .whitespace {
       width: 100%;
       height: 100px;
+}
+
+.whitespace2 {
+      width: 100%;
+      height: 120px;
 }
 
 @media(max-width: 768px) {
@@ -723,6 +722,9 @@ a:not([href]) {
 
 /*--------bone------------*/
 canvas {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
       width: 100%;
       height: 100%
 }

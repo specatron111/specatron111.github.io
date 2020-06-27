@@ -78,7 +78,38 @@
                         <li><a href="contact.html">contact<span>.</span></a></li>
                   </ul>
             </div>
-                        <canvas id="myCanvas" height="410" width="728" style="width: 728px; height: 410px;"></canvas>
+                <audio autoplay>
+                  <source src="https://a.tumblr.com/tumblr_oat8zhArMY1u1vzz5o1.mp3" type="audio/mpeg">
+                  Sucks. Your browser does not support the audio element.
+                </audio>
+
+            <div class="container">
+                  <div class="checkbox-switch">
+                        <input type="checkbox" checked="" onclick="darkModeClicked(this);" name="status" class="input-checkbox" id="toolbar-active">
+                        
+                        <div class="checkbox-animate">
+                              <span class="checkbox-off">DARK</span>
+                              <span class="checkbox-on">LIGHT</span>
+                        </div>
+                        <script>
+                              function darkModeClicked(checkbox) {
+                                darkMode = checkbox.checked;
+                                setDarkMode();
+                              }
+                              document.getElementById('toolbar-active').checked = darkMode;
+                        </script>
+                  </div>
+                  <div class="hero-content">
+                        <div class="whitespace2"></div>
+                        <div class="title">
+                              <h3 class="wow fadeInUp" data-wow-delay="0.2s" data-splitting>ABOUT ME アンドルー</h3><br>
+                                    <script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
+                                    <script id="rendered-js">
+                                          Splitting({
+                                            whitespace: true });
+                                              </script>
+
+                        <canvas id="myCanvas"></canvas>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
                         <script id="rendered-js">
                               //GET A RANDOM NUMBER FUNCTION
@@ -102,7 +133,7 @@
                               
                               renderer.setClearColor(0xffffff, 0);
                               renderer.setPixelRatio(window.devicePixelRatio);
-                              renderer.setSize(window.innerWidth, window.innerHeight);
+                              renderer.setSize(window.innerWidth/2, window.innerHeight/2);
                               
                               //SCENE
                               scene = new THREE.Scene();
@@ -228,43 +259,14 @@
                               }
                               //# sourceURL=pen.js
                                   </script>
-                <audio autoplay>
-                  <source src="https://a.tumblr.com/tumblr_oat8zhArMY1u1vzz5o1.mp3" type="audio/mpeg">
-                  Sucks. Your browser does not support the audio element.
-                </audio>
-
-            <div class="container">
-                  <div class="checkbox-switch">
-                        <input type="checkbox" checked="" onclick="darkModeClicked(this);" name="status" class="input-checkbox" id="toolbar-active">
-                        
-                        <div class="checkbox-animate">
-                              <span class="checkbox-off">DARK</span>
-                              <span class="checkbox-on">LIGHT</span>
-                        </div>
-                        <script>
-                              function darkModeClicked(checkbox) {
-                                darkMode = checkbox.checked;
-                                setDarkMode();
-                              }
-                              document.getElementById('toolbar-active').checked = darkMode;
-                        </script>
-                  </div>
-                  <div class="hero-content">
-
                         <div class="row">
                               <div class="col-lg-12">
-                                    <h1 class="wow fadeInUp" data-wow-delay="0.2s" data-splitting>ABOUT ME アンドルー</h1><br>
-                                    <script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
-                                    <script id="rendered-js">
-                                          Splitting({
-                                            whitespace: true });
-                                              </script>
-
                                     <p class="wow fadeInUp" data-wow-delay="1.2s">i started gaming as a kid, halo & minecraft. the joy grew from there</p>
 
                                     <p class="wow fadeInUp" data-wow-delay="1.2s">my brothers introduced me to scratch when i was 11. i created many games that, albeit useless, were quite fun to make. my interest expanded and i got into engines like GameMaker Studio and Python, read books on the code and raspberry pi projects. </p>
 
                               </div>
+                        </div>
                         </div>
                   </div>
             </div>

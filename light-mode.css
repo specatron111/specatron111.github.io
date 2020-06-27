@@ -12,25 +12,18 @@ html, body {
     background-attachment:fixed;
     color: white !important;
 }
-
-* {
-	box-sizing: border-box;
+.title {
+    position: relative;
 }
-
-body {
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-h1 {
+h3 {
 	font-family: 'Nova Mono', monospace;
 	font-size: 2.5rem;
 	text-transform: uppercase;
 	width: 728px;
 	height: 410px;
-	color: turquoise;
+    color: turquoise;
+    position: absolute;
+    top: 120px;
 }
 
 .char {
@@ -726,8 +719,8 @@ a:not([href]) {
 
 /*--------bone------------*/
 canvas {
-    width: 100%;
-    height: 100%
+    width: 25%;
+    height: 25%
 }
 
 /* Checkbox switch */
