@@ -1,0 +1,149 @@
+/*--------vaporwave----------*/
+@import 'https://fonts.googleapis.com/css?family=VT323';
+
+$cells: 320;
+$stars: 100;
+
+html, body {
+  height: 320px;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 480px;
+  background: #000;
+  font-family: 'VT323', monospace;
+  transform: translate3d(0, 0, 0);
+}
+
+.space {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  
+  span {
+    position: absolute;
+    height: 3px;
+    background: #a3a6a9;
+    border-top-left-radius: 100%;
+    filter: blur(1px);
+    
+    @for $i from 1 through $stars {
+      &:nth-child(#{$i}) {
+        width:
+          3px + ceil($i / 4) / 4;
+        opacity:
+          1 - ceil($i / 4) / 25;
+      }
+    }
+  }
+}
+
+.text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 5em;
+  color: #fff;
+  animation: glitch .5s infinite;
+}
+
+.grid {
+  width: 400px;
+  height: 8000px;
+  color: #f12;
+  animation:
+    slide-up .5s linear infinite;
+  
+  div {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 10px solid;
+    border-right: none;
+    border-top-width: 2.5px;
+    border-bottom-width: 2.5px;
+    animation:
+      shine .5s linear infinite;
+    
+    &:nth-child(4n) {
+      border-right: 10px solid
+    }
+    
+    @for $i from 1 through $cells {
+      $j: $cells - ($i - 1);
+      &:nth-child(#{$i}) {
+        opacity:
+          1 - ($j / $cells) * 2.5;
+        animation-delay:
+          ceil($j / 4) * 50ms;
+      }
+    }
+  }
+}
+
+@keyframes slide-up {
+  from {
+    $s-color: rgba(blue, .5);
+    transform:
+      rotateX(70deg)
+      translateY(-3500px);
+    box-shadow:
+      -72px 0 80px -64px $s-color,
+       72px 0 80px -64px $s-color;
+  }
+  to {
+    transform:
+      rotateX(70deg)
+      translateY(-3600px);
+  }
+}
+
+@keyframes shine {
+  50% {
+    color: hotpink;
+    background: currentColor;
+    box-shadow:
+      0 0 36px 20px,
+      inset 0 0 36px
+  }
+}
+
+/*
+  Glitch code taken from:
+  codepen.io/ayamflow/pen/DCifh
+  and slightly modified.
+*/
+
+$red: rgb(192, 20, 124);
+$blue: rgb(0, 170, 255);
+$yellow: rgb(255, 238, 0);
+$green: rgb(0, 255, 128);
+$colors: $red $blue $yellow $green;
+
+@mixin glitch {
+  $i: random(length($colors));
+  $color: nth($colors, $i);
+  $x: random(50px) - 25px;
+  
+  text-shadow: $x 0px 0px $color;
+  left: random(12px) - 6px;
+}
+
+@keyframes glitch {
+  @for $i from 0 through 100 {
+    $percent: 0% + $i;
+    #{$percent} {
+      @include glitch;
+    }
+  }
+}
