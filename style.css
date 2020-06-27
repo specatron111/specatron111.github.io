@@ -692,7 +692,7 @@ canvas {
 /*--------lightswitch-----------*/
 .lightswitch-app {
       perspective: 500px;
-
+}
 .switch-control {
 	display: none;
 }
