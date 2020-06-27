@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap');
 
 /*--------------- basic styling --------------- */
 html, body {
@@ -7,8 +7,47 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: "Roboto Mono" !important;
-    background: linear-gradient(#3D007A, #FFADD6)!important;
-    color: black !important;
+    background: linear-gradient(#3D007A, #FFADD6 ) fixed;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    color: white !important;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-family: 'Nova Mono', monospace;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	width: 728px;
+	height: 410px;
+	color: turquoise;
+}
+
+.char {
+	offset-path: path('M.2 219.6c247-107 233.3 91.4 406.4 138.4C659.2 426.6 750.2 6.6 552.2.6 337.7-5.9 426.9 415 696.1 359.4c256.1-52.9 182.1-217.9 413.1-163.9');
+	offset-distance: calc(var(--char-index) * 1.5rem);
+	position: absolute;
+	animation: loop 3500ms cubic-bezier(.62,.01,.42,1.01) infinite alternate calc(var(--char-index) * 10ms);
+}
+
+@keyframes loop {
+	50% {
+		offset-distance: calc((var(--char-index) * 2.5rem) + 700px);
+		color: hotpink;
+	}
+	100% {
+		offset-distance: calc((var(--char-index) * 1.5rem) + 1690px);
+	}
 }
 
 .whitespace {
@@ -27,7 +66,7 @@ html, body {
     width: 24em;
     top: 50%;
     margin: auto;
-    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -61,7 +100,7 @@ html, body {
 
 @keyframes blinkTextCussor {
     from {
-          border-right-color: rgba(0, 0, 0, 0.75);
+          border-right-color: rgba(255, 255, 255, 0.75);
     }
     to {
           border-right-color: transparent;
@@ -71,7 +110,7 @@ html, body {
 /*--------------- navigation --------------- */
 nav {
     width: 100%;
-    background: #0f0f0f;
+    background: none;
     height: 70px;
     position: fixed;
     z-index: 1;
@@ -86,7 +125,7 @@ nav #brand {
 }
 
 nav #brand a {
-    color: black;
+    color: white;
     transition: all 0.3s ease-out;
 }
 
@@ -115,7 +154,7 @@ nav #menu li span {
 }
 
 nav #menu li a {
-    color: black;
+    color: white;
 }
 
 nav #menu li a:hover {
@@ -185,7 +224,7 @@ nav #menu li a:hover {
 }
 
 #resize #menu li a {
-    color: black;
+    color: white;
 }
 
 #resize #menu li a:hover {
@@ -263,8 +302,8 @@ nav #menu li a:hover {
     text-shadow: 0;
     width: 13px;
     height: 13px;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
     -webkit-transform: translate(-50%, 0) rotate(45deg);
     animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
@@ -291,7 +330,7 @@ h6 {
 
 .vertical {
     margin-top: 40px;
-    border-left: 1px solid black;
+    border-left: 1px solid white;
     height: 80px;
     position: absolute;
     left: 50%;
@@ -311,7 +350,7 @@ h6 {
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
-    color: black;
+    color: white;
     display: block;
     top: 8%;
     left: -20%;
@@ -329,7 +368,7 @@ h6 {
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
-    color: black;
+    color: white;
     display: block;
     top: 80%;
     left: 90%;
@@ -347,7 +386,7 @@ h6 {
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
-    color: black;
+    color: white;
     display: block;
     top: 80%;
     left: -50%;
@@ -365,7 +404,7 @@ h6 {
     font-family: "Roboto Mono";
     font-size: 36px;
     position: relative;
-    color: black;
+    color: white;
     display: block;
     top: 10%;
     left: 90%;
@@ -399,7 +438,7 @@ h6 {
 }
 
 .hr {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     height: 1px;
 }
 
@@ -409,13 +448,13 @@ h6 {
 }
 
 .info p {
-    color: grey;
+    color: whitesmoke;
     font-weight: lighter;
 }
 
 .info li {
     font-weight: lighter;
-    color: black;
+    color: white;
     font-size: 18px;
     padding-left: 20px;
 }
@@ -491,7 +530,7 @@ h6 {
 }
 
 #media a {
-    color:black;
+    color:white;
 }
 
 #address a {
@@ -507,7 +546,7 @@ h6 {
 .hero-content p {
     font-weight: 300;
     line-height: 36px;
-    color: grey;
+    color: whitesmoke;
 }
 
 .hero-content h6 {
@@ -578,7 +617,7 @@ h6 {
 #contact-form label {
     display: block;
     font-size: .8em;
-    color: #999;
+    color: whitesmoke;
     padding-left: 5px;
 }
 
@@ -588,7 +627,7 @@ h6 {
     border: none;
     resize: vertical;
     background: transparent;
-    color: black;
+    color: white;
     font-weight: bolder;
 }
 
@@ -603,7 +642,7 @@ textarea:focus {
 }
 
 .textarea {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .send {
@@ -611,14 +650,14 @@ textarea:focus {
     text-transform: uppercase;
     padding: 20px 30px;
     background: transparent;
-    color: black;
+    color: white;
     font-size: 14px;
     letter-spacing: 2px;
 }
 
 .send:hover {
-    background: black;
-    color: #101010;
+    background: white;
+    color: white;
 }
 
 @media(max-width: 768px) {
@@ -631,56 +670,56 @@ textarea:focus {
 /*--------------- project page --------------- */
 
 .prev, .next  {
-    color: darkgrey;
+    color: whitesmoke;
     text-decoration: none;
 }
 
 
 .prev, .next a {
-    color: darkgrey;
+    color: whitesmoke;
 }
 
 .prev a {
-    color: darkgrey;
+    color: whitesmoke;
     text-align: left;
     text-decoration: none;
 }
 
 .next  {
-    color: darkgrey;
+    color: whitesmoke;
     text-align: right;
     text-decoration: none;
 }
 
 .prev a:hover 
 {
-    color: darkgrey;
+    color: whitesmoke;
    text-decoration:none; 
    cursor:pointer;  
 }
 
 .next a:hover 
 {
-    color: darkgrey;
+    color: whitesmoke;
    text-decoration:none; 
    cursor:pointer;  
 }
 
 a:not([href]) {
-    color: darkgrey;
+    color: whitesmoke;
     text-decoration: none;
   }
 
 
 .link:hover 
 {
-    color: darkgrey;
+    color: whitesmoke;
     text-decoration:none; 
     cursor:pointer;  
 }    
 
 .link {
-    color: black;
+    color: white;
     text-align: right;
     text-decoration: none;
 }
@@ -689,4 +728,100 @@ a:not([href]) {
 canvas {
     width: 100%;
     height: 100%
+}
+
+/* Checkbox switch */
+
+.checkbox-switch {
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+    right: 3rem;
+    bottom: 5rem;
+    text-align: left;
+    width: 100px;
+    height: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.checkbox-switch input.input-checkbox {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 30px;
+      padding: 0;
+      margin: 0;
+      opacity: 0;
+      z-index: 2;
+      cursor: pointer;
+}
+
+.checkbox-switch .checkbox-animate {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background-color: #95a5a6;
+    -webkit-transition: background 0.25s ease-out 0s;
+    transition: background 0.25s ease-out 0s;
+}
+
+.checkbox-switch .checkbox-animate:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      background-color: #7f8c8d;
+      top: 5px;
+      left: 5px;
+       -webkit-transition: left 0.3s ease-out 0s;
+    transition: left 0.3s ease-out 0s;
+    z-index: 10;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate {
+      background-color: #ffc6ffcb;;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate:before {
+      left: 75px;
+      background-color: pink;
+}
+
+.checkbox-switch .checkbox-off,
+.checkbox-switch .checkbox-on {
+      float: left;
+      color: #fff;
+      font-weight: 700;
+      padding-top: 6px;
+       -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.checkbox-switch .checkbox-off {
+      margin-left: 30px;
+      opacity: 1;
+}
+
+.checkbox-switch .checkbox-on {
+      display: none;
+      float: right;
+      margin-right: 35px;
+      opacity: 0;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate .checkbox-off {
+      display: none;
+      opacity: 0;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate .checkbox-on {
+      display: block;
+      opacity: 1;
 }
