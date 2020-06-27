@@ -703,7 +703,7 @@ body {
 	top: 0;
 	left: 0;
       color:#dfdfdf;
-      background: #0f0f0f;
+      background-color: #0f0f0f;
 }
 
 .switch-display {
@@ -728,5 +728,5 @@ body {
 
 .switch-control:checked ~ body {
       color:#0f0f0f;
-	background: linear-gradient(#3D007A, #FFADD6);
+	background-color: linear-gradient(#3D007A, #FFADD6);
 }
