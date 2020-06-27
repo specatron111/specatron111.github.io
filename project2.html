@@ -55,6 +55,21 @@
           </script>
 </head>
 <body class="room">
+      <div class="checkbox-switch">
+            <input type="checkbox" checked="" onclick="darkModeClicked(this);" name="status" class="input-checkbox" id="toolbar-active">
+            
+            <div class="checkbox-animate">
+                  <span class="checkbox-off">DARK</span>
+                  <span class="checkbox-on">LIGHT</span>
+            </div>
+            <script>
+                  function darkModeClicked(checkbox) {
+                    darkMode = checkbox.checked;
+                    setDarkMode();
+                  }
+                  document.getElementById('toolbar-active').checked = darkMode;
+            </script>
+      </div>
       <div class="wrapper">
 
             <!--------------- navbar starts here --------------->
