@@ -1,5 +1,5 @@
 
-var darkMode = localStorage.getItem('darkMode', true);
+var darkMode = localStorage.getItem('darkMode');
 console.log(darkMode);
 function setDarkMode() {
       for (let styleSheet of document.styleSheets) {
