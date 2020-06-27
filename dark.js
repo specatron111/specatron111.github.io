@@ -1,14 +1,9 @@
-var darkMode = localStorage.getItem('darkMode');
-console.log(darkMode);
-if (darkMode === null) {
-    darkMode = true
-}
-function setDarkMode() {
+
+function setDarkMode(x) {
       for (let styleSheet of document.styleSheets) {
             if (styleSheet.href && styleSheet.href.includes('/light-mode.css')) {
-                  styleSheet.disabled = !darkMode;
+                  styleSheet.disabled = !x;
                   break;
             }
       }
 }
-$().ready(setDarkMode);
