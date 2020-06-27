@@ -7,10 +7,5 @@ function setDarkMode() {
                   break;
             }
       }
-    localStorage.setItem('darkMode', true);
-}
-function toggleDarkMode() {
-  darkMode = !darkMode;
-  setDarkMode();
 }
 setDarkMode();
