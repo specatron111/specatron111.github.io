@@ -541,7 +541,13 @@ h6 {
 }
 
 .image3 {
-      background: url('img/project3code.jpg') no-repeat 50% 70%;
+      background: url('img/ge1.png') no-repeat;
+      background-size:contain;
+      
+}
+
+.image32 {
+      background: url('img/ge2.png') no-repeat 50% 70%;
 }
 
 .image4 {
@@ -663,3 +669,17 @@ a:not([href]) {
       color: grey;
       text-decoration: none;
     }
+
+
+.link:hover 
+{
+      color: whitesmoke;
+      text-decoration:none; 
+      cursor:pointer;  
+}    
+
+.link {
+      color: white;
+      text-align: right;
+      text-decoration: none;
+}
