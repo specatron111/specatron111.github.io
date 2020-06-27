@@ -36,7 +36,7 @@ h3 {
 @keyframes loop {
 	50% {
 		offset-distance: calc((var(--char-index) * 2.5rem) + 700px);
-		color: hotpink;
+		color: yellow;
 	}
 	100% {
 		offset-distance: calc((var(--char-index) * 1.5rem) + 1690px);
@@ -738,6 +738,7 @@ canvas {
     border-radius: 30px;
     line-height: 1.2;
     font-size: 14px;
+    z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
 }
 
 .checkbox-switch input.input-checkbox {

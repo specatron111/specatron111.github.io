@@ -29,27 +29,8 @@
       $(function(){
       $("#footer").load("footer.html"); 
       });
-      </script> 
-            <script>
-                  var darkMode = localStorage.getItem('darkMode', true);
-                  function setDarkMode() {
-                        for (let styleSheet of document.styleSheets) {
-                              console.log(styleSheet.href)
-                              if (styleSheet.href.includes('/light-mode.css')) {
-                                    styleSheet.disabled = !darkMode;
-                                    console.log(styleSheet.href)
-                                    break;
-                              }
-                        }
-                      localStorage.setItem('darkMode', true);
-                  }
-                  function toggleDarkMode() {
-                    darkMode = !darkMode;
-                    setDarkMode();
-                  }
-                  setDarkMode();
-                </script>
-
+</script>
+      <script src="dark.js"></script>
 </head>
 <body class="room">
       <div class="checkbox-switch">

@@ -744,6 +744,7 @@ canvas {
       border-radius: 30px;
       line-height: 1.2;
       font-size: 14px;
+      z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
   }
   
   .checkbox-switch input.input-checkbox {
