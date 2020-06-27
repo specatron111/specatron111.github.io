@@ -1,4 +1,4 @@
-
+$().ready(setDarkMode);
 var darkMode = localStorage.getItem('darkMode');
 if (darkMode === null) {
     darkMode = true
