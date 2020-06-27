@@ -650,7 +650,7 @@ textarea:focus {
 
 .send:hover {
     background: white;
-    color: white;
+    color: transparent;
 }
 
 @media(max-width: 768px) {
