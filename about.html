@@ -74,14 +74,12 @@
                               <span class="checkbox-on">LIGHT</span>
                         </div>
                         <script>
-                              function darkModeClicked(checkbox) {
-                              darkMode = checkbox.checked;
-                              localStorage.setItem('darkMode', darkMode);
-                              setDarkMode();
-                              }
-                              var darkMode = localStorage.getItem('darkMode');
-                              document.getElementById('toolbar-active').checked = darkMode;
-                              setDarkMode();
+                  function darkModeClicked(checkbox) {
+                    darkMode = checkbox.checked;
+                    localStorage.setItem('darkMode', darkMode);
+                    setDarkMode();
+                  }
+                  document.getElementById('toolbar-active').checked = darkMode;
                         </script>
                   </div>
                   <div class="hero-content">
