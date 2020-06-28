@@ -26,28 +26,17 @@
             $(function(){
             $("#footer").load("footer.html"); 
             });
-            </script> 
-      <script src="dark.js"></script>
+        </script> 
 </head>
 <body class="room">
-      <div class="checkbox-switch">
-                        <input type="checkbox" checked="" onclick="darkModeClicked(this);" name="status" class="input-checkbox" id="toolbar-active">
-                        
-                        <div class="checkbox-animate">
-                              <span class="checkbox-off">DARK</span>
-                              <span class="checkbox-on">LIGHT</span>
-                        </div>
-                        <script>
-                              function darkModeClicked(checkbox) {
-                              darkMode = checkbox.checked;
-                              localStorage.setItem('darkMode', darkMode);
-                              setDarkMode();
-                              }
-                              var darkMode = localStorage.getItem('darkMode');
-                              document.getElementById('toolbar-active').checked = darkMode;
-                              setDarkMode();
-                        </script>
-                  </div>
+	<div class="checkbox-switch">
+		<input type="checkbox" onclick="darkModeClicked(this);" name="darkmode" class="input-checkbox" id="darkmode-toggle">
+		<div class="checkbox-animate">
+                  <span class="checkbox-off">DARK</span>
+                  <span class="checkbox-on">LIGHT</span>
+		</div>
+		<script src="dark.js"></script>
+  	</div>
       <div class="wrapper">
             <nav>
                   <span id="brand">
