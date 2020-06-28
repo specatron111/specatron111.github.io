@@ -75,11 +75,13 @@
                         </div>
                         <script>
                               function darkModeClicked(checkbox) {
-                                darkMode = checkbox.checked;
-                                localStorage.setItem('darkMode', darkMode);
-                                setDarkMode();
+                              darkMode = checkbox.checked;
+                              localStorage.setItem('darkMode', darkMode);
+                              setDarkMode();
                               }
+                              var darkMode = localStorage.getItem('darkMode');
                               document.getElementById('toolbar-active').checked = darkMode;
+                              setDarkMode();
                         </script>
                   </div>
                   <div class="hero-content">
