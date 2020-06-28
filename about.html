@@ -28,7 +28,6 @@
             $("#footer").load("footer.html"); 
             });
             </script> 
-           <script src="dark.js"></script>
 </head>
 <body class="room">
       <div class="wrapper">
@@ -73,14 +72,7 @@
                               <span class="checkbox-off">DARK</span>
                               <span class="checkbox-on">LIGHT</span>
                         </div>
-                        <script>
-                  function darkModeClicked(checkbox) {
-                    darkMode = checkbox.checked;
-                    localStorage.setItem('darkMode', darkMode);
-                    setDarkMode();
-                  }
-                  document.getElementById('toolbar-active').checked = darkMode;
-                        </script>
+                        <script src="dark.js"></script>
                   </div>
                   <div class="hero-content">
                         <div class="whitespace2"></div>
