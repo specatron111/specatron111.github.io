@@ -11,4 +11,3 @@ function setDarkMode() {
             }
       }
 }
-$().ready(setDarkMode);
