@@ -19,11 +19,11 @@ h3 {
 	font-family: 'Nova Mono', monospace;
 	font-size: 2.5rem;
 	text-transform: uppercase;
-	width: 728px;
-	height: 410px;
+	width: 35.5em;
+	height: 25.625em;
     color: turquoise;
     position: absolute;
-    top: 120px;
+    top: 2.5em;
 }
 
 .char {
@@ -46,8 +46,11 @@ h3 {
     width: 100%;
     height: 100px;
 }
-
-@media(max-width: 768px) {
+.whitespace2 {
+    width: 100%;
+    height: 120px;
+}
+@media(max-width: 48em) {
     .whitespace {
           display: none;
     }
@@ -79,7 +82,7 @@ h3 {
     }
 }
 
-@media(max-width: 7000px) {
+@media(max-width: 437.5em) {
     @keyframes typewriter {
           from {
                 width: 0;
@@ -155,12 +158,12 @@ nav #menu li a:hover {
 
 #toggle {
     position: absolute;
-    right: 30px;
-    top: 20px;
+    right: 1.875em;
+    top: 1.875em;
     font-weight: 300;
     z-index: 2;
-    width: 30px;
-    height: 30px;
+    width: 1.875em;
+    height: 1.875em;
     cursor: pointer;
     float: right;
     transition: all 0.3s ease-out;
@@ -228,7 +231,7 @@ nav #menu li a:hover {
     opacity: 1;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 48em) {
     #toggle {
           visibility: visible;
           opacity: 1;
@@ -254,7 +257,7 @@ nav #menu li a:hover {
     }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 48em) {
     #resize {
           visibility: hidden !important;
     }
@@ -275,7 +278,7 @@ nav #menu li a:hover {
     line-height: 58px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 48em) {
     .header h1 {
           font-size: 26px;
     }
@@ -292,8 +295,8 @@ nav #menu li a:hover {
     z-index: 0;
     text-decoration: none;
     text-shadow: 0;
-    width: 13px;
-    height: 13px;
+    width: 0.8125em;
+    height: 0.8125em;
     border-bottom: 2px solid white;
     border-right: 2px solid white;
     -webkit-transform: translate(-50%, 0) rotate(45deg);
@@ -329,7 +332,7 @@ h6 {
 }
 
 .project {
-    height: 500px;
+    height: 31.25em;
 }
 
 .project1 {
@@ -404,7 +407,7 @@ h6 {
     bottom: 0;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 48em) {
     .project {
           width: 90% !important;
           margin: 14px auto;
@@ -506,7 +509,7 @@ h6 {
     display: inline-block;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 48em) {
     .collab, #personal, #media, #address {
           text-align: center;
     }
@@ -545,7 +548,7 @@ h6 {
     text-align: left;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 48em) {
     .hero-content {
           padding-top: 50px;
           width: 96%;
@@ -652,7 +655,7 @@ textarea:focus {
     color: transparent;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 48em) {
     #contact-form {
           margin: 5% -8%;
           width: 98%;
@@ -731,90 +734,90 @@ canvas {
     right: 3rem;
     bottom: 5rem;
     text-align: left;
-    width: 100px;
-    height: 30px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
+    width: 6.25em;
+    height: 1.875em;
+    -webkit-border-radius: 1.875em;
+    border-radius: 1.875em;
     line-height: 1.2;
-    font-size: 14px;
+    font-size: 0.875em;
     z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
 }
 
 .checkbox-switch input.input-checkbox {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100px;
-      height: 30px;
-      padding: 0;
-      margin: 0;
-      opacity: 0;
-      z-index: 2;
-      cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6.25em;
+    height: 1.875em;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .checkbox-switch .checkbox-animate {
-    position: relative;
-    width: 100px;
-    height: 30px;
-    background-color: #95a5a6;
-    -webkit-transition: background 0.25s ease-out 0s;
-    transition: background 0.25s ease-out 0s;
+  position: relative;
+  width: 6.25em;
+  height: 1.875em;
+  background-color: #95a5a6;
+  -webkit-transition: background 0.25s ease-out 0s;
+  transition: background 0.25s ease-out 0s;
 }
 
 .checkbox-switch .checkbox-animate:before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
-      background-color: #7f8c8d;
-      top: 5px;
-      left: 5px;
-       -webkit-transition: left 0.3s ease-out 0s;
-    transition: left 0.3s ease-out 0s;
-    z-index: 10;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 0.625em;
+    -webkit-border-radius: 0.625em;
+    background-color: #7f8c8d;
+    top: 0.3125em;
+    left: 0.3125em;
+     -webkit-transition: left 0.3s ease-out 0s;
+  transition: left 0.3s ease-out 0s;
+  z-index: 10;
 }
 
 .checkbox-switch input.input-checkbox:checked + .checkbox-animate {
-      background-color: #ffc6ffcb;;
+    background-color: #ffc6ffcb;;
 }
 
 .checkbox-switch input.input-checkbox:checked + .checkbox-animate:before {
-      left: 75px;
-      background-color: pink;
+    left: 4.6875em;
+    background-color: pink;
 }
 
 .checkbox-switch .checkbox-off,
 .checkbox-switch .checkbox-on {
-      float: left;
-      color: #fff;
-      font-weight: 700;
-      padding-top: 6px;
-       -webkit-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+    float: left;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 0.375em;
+     -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 .checkbox-switch .checkbox-off {
-      margin-left: 30px;
-      opacity: 1;
+    margin-left: 1.875em;
+    opacity: 1;
 }
 
 .checkbox-switch .checkbox-on {
-      display: none;
-      float: right;
-      margin-right: 35px;
-      opacity: 0;
+    display: none;
+    float: right;
+    margin-right: 2.1875em;
+    opacity: 0;
 }
 
 .checkbox-switch input.input-checkbox:checked + .checkbox-animate .checkbox-off {
-      display: none;
-      opacity: 0;
+    display: none;
+    opacity: 0;
 }
 
 .checkbox-switch input.input-checkbox:checked + .checkbox-animate .checkbox-on {
-      display: block;
-      opacity: 1;
+    display: block;
+    opacity: 1;
 }
