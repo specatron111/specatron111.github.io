@@ -19,7 +19,7 @@ h3 {
 	text-transform: uppercase;
 	width: 728px;
 	height: 410px;
-      color: black;
+      color: gray;
       position: absolute;
       top: 120px;
 }
@@ -33,11 +33,11 @@ h3 {
 
 @keyframes loop {
 	50% {
-		offset-distance: calc((var(--char-index) * 2.5rem) + 40vw);
+		offset-distance: calc((var(--char-index) * 2.5rem) + 20vw);
 		color: white;
 	}
 	100% {
-		offset-distance: calc((var(--char-index) * 1.5rem) + 90vw);
+		offset-distance: calc((var(--char-index) * 1.5rem) + 45vw);
 	}
 }
 
