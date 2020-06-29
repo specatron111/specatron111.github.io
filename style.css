@@ -33,11 +33,11 @@ h3 {
 
 @keyframes loop {
 	50% {
-		offset-distance: calc((var(--char-index) * 2.5rem) + 700px);
+		offset-distance: calc((var(--char-index) * 2.5rem) + 40vw);
 		color: white;
 	}
 	100% {
-		offset-distance: calc((var(--char-index) * 1.5rem) + 1690px);
+		offset-distance: calc((var(--char-index) * 1.5rem) + 90vw);
 	}
 }
 
