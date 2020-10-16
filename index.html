@@ -26,6 +26,33 @@
       crossorigin="anonymous">
       </script>
       <script> 
+      $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+            var nodemailer = require('nodemailer');
+
+            var transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                  user: 'uniepicgamer@gmail.com',
+                  pass: 'Epicgamerman2005'
+            }
+            });
+
+            var mailOptions = {
+            from: 'uniepicgamer@gmail.com',
+            to: 'uniepicgamer@gmail.com',
+            subject: JSON.stringify(data, null, 2),
+            text: JSON.stringify(data, null, 2)
+            };
+
+            transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+                  console.log(error);
+            } else {
+                  console.log('Email sent: ' + info.response);
+            }
+            });
+            console.log(JSON.stringify(data, null, 2));
+      });
       $(function(){
       $("#footer").load("footer.html"); 
       });
